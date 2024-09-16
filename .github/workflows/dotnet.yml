@@ -28,4 +28,4 @@ jobs:
         run: dotnet build ./UnitTest/UnitTest.csproj --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test ./UnitTest/UnitTest.csproj --collect:"XPlat Code Coverage" --settings coverlet.collector
+        run: dotnet test ./UnitTest/UnitTest.csproj --settings ./coverlet.runsettings
