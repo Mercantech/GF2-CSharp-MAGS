@@ -1,27 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace WPF
 {
     /// <summary>
-    /// Interaction logic for Taxa.xaml
+    /// Interaction logic for HrGran.xaml
     /// </summary>
-    public partial class Taxa : Page
+    public partial class HrGran : Page
     {
-        public Taxa()
+        public HrGran()
         {
             InitializeComponent();
         }
-
-        private void CalculatePrice_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
         private void NotionButton_Click(object sender, RoutedEventArgs e)
         {
-            string url = "https://mercantec.notion.site/Taxa-103dab5ca23780459c95fdbf758740f8?pvs=4";
+            string url = "https://mercantec.notion.site/Hr-Gran-103dab5ca237806880cff089ccd45d2c?pvs=4";
             try
             {
                 ProcessStartInfo psi = new ProcessStartInfo
