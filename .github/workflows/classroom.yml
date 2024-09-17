@@ -38,16 +38,22 @@ jobs:
       - name: Build solution
         run: dotnet build ./UnitTest/UnitTest.csproj --configuration Release --no-restore
 
+      - name: Install JUnit XML Test Logger
+        run: dotnet tool install --global JunitXml.TestLogger
+
+      - name: Add .NET tools to PATH
+        run: echo "${HOME}/.dotnet/tools" >> $GITHUB_PATH
+
       - name: Run tests
         id: run-tests
-        run: dotnet test ./UnitTest/UnitTest.csproj --logger "trx;LogFileName=TestResults.trx"
+        run: dotnet test ./UnitTest/UnitTest.csproj --logger "junit;LogFilePath=TestResults.xml"
 
-      - name: Publish test results
+      - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: TestResults
-          path: '**/*.trx'
+          path: '**/TestResults.xml'
 
       - name: Autograding
-        uses: education/autograding@v1
+        uses: education/autograding@v2
