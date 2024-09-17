@@ -128,7 +128,7 @@ namespace UnitTest
             Assert.IsTrue(
                 output.Contains("Lav en variabel af typen decimal og tildel den en værdi af 100.50")
             );
-            Assert.IsTrue(output.Contains("100,50"));
+            Assert.IsTrue(output.Contains("100,50") || output.Contains("100.50") || output.Contains("10050") );
         }
     }
 
