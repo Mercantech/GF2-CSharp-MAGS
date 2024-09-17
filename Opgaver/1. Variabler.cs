@@ -74,7 +74,7 @@
         public static void Float1()
         {
             Console.WriteLine("Opgave 6: ");
-            Console.WriteLine("Lav en variabel af typen float og tildel den en værdi af 3.14");
+            Console.WriteLine("Lav en variabel af typen float og tildel den en værdi af 3 + 0.14");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder!
             float number = 3.14f;
@@ -94,7 +94,7 @@
         public static void Decimal1()
         {
             Console.WriteLine("Opgave 8: ");
-            Console.WriteLine("Lav en variabel af typen decimal og tildel den en værdi af 100.50");
+            Console.WriteLine("Lav en variabel af typen decimal og tildel den en værdi af 100 og en halv");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder!
             decimal number = 100.50m;

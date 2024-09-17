@@ -100,7 +100,7 @@ namespace UnitTest
             string output = stringWriter.ToString();
             Assert.IsTrue(output.Contains("Opgave 6:"));
             Assert.IsTrue(
-                output.Contains("Lav en variabel af typen float og tildel den en værdi af 3.14")
+                output.Contains("Lav en variabel af typen float og tildel den en værdi af 3 + 0.14")
             );
             Assert.IsTrue(output.Contains("3,14") || output.Contains("3.14") || output.Contains("314"));
         }
@@ -126,9 +126,9 @@ namespace UnitTest
             string output = stringWriter.ToString();
             Assert.IsTrue(output.Contains("Opgave 8:"));
             Assert.IsTrue(
-                output.Contains("Lav en variabel af typen decimal og tildel den en værdi af 100.50")
+                output.Contains("Lav en variabel af typen decimal og tildel den en værdi af 100 og en halv")
             );
-            Assert.IsTrue(output.Contains("100,50") || output.Contains("100.50") || output.Contains("10050") );
+            Assert.IsTrue(output.Contains("100,50") || output.Contains("100.50") || output.Contains("10050"));
         }
     }
 
