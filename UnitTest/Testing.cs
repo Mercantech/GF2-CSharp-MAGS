@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using System.IO;
 using Opgaver;
+using System.Globalization;
 
 namespace UnitTest
 {
@@ -14,6 +15,8 @@ namespace UnitTest
         {
             stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
+
+            CultureInfo.CurrentCulture = new CultureInfo("da-DK");
         }
 
         [TearDown]
