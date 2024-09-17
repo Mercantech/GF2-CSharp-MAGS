@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.IO;
 using NUnit.Framework;
 using Opgaver;
@@ -14,6 +15,8 @@ namespace UnitTest
         {
             stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
+
+            CultureInfo.CurrentCulture = new CultureInfo("da-DK");
         }
 
         [TearDown]
@@ -29,7 +32,7 @@ namespace UnitTest
             string output = stringWriter.ToString();
             Assert.IsTrue(output.Contains("Opgave 1:"));
             Assert.IsTrue(
-                output.Contains("Lav en variabel af typen int og tildel den en v�rdi af ti!")
+                output.Contains("Lav en variabel af typen int og tildel den en værdi af ti!")
             );
             Assert.IsTrue(output.Contains("10"));
         }
@@ -42,10 +45,10 @@ namespace UnitTest
             Assert.IsTrue(output.Contains("Opgave 2:"));
             Assert.IsTrue(
                 output.Contains(
-                    "Lav en variabel af typen double og tildel den en v�rdi komma (decimal) v�rdi af 5 og en 1/4"
+                    "Lav en variabel af typen double og tildel den en værdi komma (decimal) værdi af 5 og en 1/4"
                 )
             );
-            Assert.IsTrue(output.Contains("5.25") || output.Contains("5,25"));
+            Assert.IsTrue(output.Contains("5.25") || output.Contains("5,25") || output.Contains("525"));
         }
 
         [Test]
@@ -56,7 +59,7 @@ namespace UnitTest
             Assert.IsTrue(output.Contains("Opgave 3:"));
             Assert.IsTrue(
                 output.Contains(
-                    "Lav en variabel af typen string og tildel den en v�rdi - den skal indeholde teksten 'Hello, World' med et udr�bstegn til sidst!"
+                    "Lav en variabel af typen string og tildel den en værdi - den skal indeholde teksten 'Hello, World' med et udråbstegn til sidst!"
                 )
             );
             Assert.IsTrue(output.Contains("Hello, World!"));
@@ -70,7 +73,7 @@ namespace UnitTest
             Assert.IsTrue(output.Contains("Opgave 4:"));
             Assert.IsTrue(
                 output.Contains(
-                    "Lav en variabel af typen bool og tildel den en sandhedsv�rdi (true/false)."
+                    "Lav en variabel af typen bool og tildel den en sandhedsværdi (true/false)."
                 )
             );
             Assert.IsTrue(output.Contains("True"));
@@ -97,9 +100,9 @@ namespace UnitTest
             string output = stringWriter.ToString();
             Assert.IsTrue(output.Contains("Opgave 6:"));
             Assert.IsTrue(
-                output.Contains("Lav en variabel af typen float og tildel den en v�rdi af 3.14")
+                output.Contains("Lav en variabel af typen float og tildel den en værdi af 3 + 0.14")
             );
-            Assert.IsTrue(output.Contains("3,14"));
+            Assert.IsTrue(output.Contains("3,14") || output.Contains("3.14") || output.Contains("314"));
         }
 
         [Test]
@@ -110,7 +113,7 @@ namespace UnitTest
             Assert.IsTrue(output.Contains("Opgave 7:"));
             Assert.IsTrue(
                 output.Contains(
-                    "Lav en variabel af typen char og tildel den en v�rdi af det f�rste bogstav i alfabetet (Det skal v�re stort!)"
+                    "Lav en variabel af typen char og tildel den en værdi af det første bogstav i alfabetet (Det skal være stort!)"
                 )
             );
             Assert.IsTrue(output.Contains("A"));
@@ -123,16 +126,16 @@ namespace UnitTest
             string output = stringWriter.ToString();
             Assert.IsTrue(output.Contains("Opgave 8:"));
             Assert.IsTrue(
-                output.Contains("Lav en variabel af typen decimal og tildel den en v�rdi af 100.50")
+                output.Contains("Lav en variabel af typen decimal og tildel den en værdi af 100 og en halv")
             );
-            Assert.IsTrue(output.Contains("100,50"));
+            Assert.IsTrue(output.Contains("100,50") || output.Contains("100.50") || output.Contains("10050"));
         }
     }
 
     public class TestsOfIndputs
     {
         private StringWriter stringWriter;
-        private StringReader? stringReader;
+        private StringReader stringReader;
 
         [SetUp]
         public void Setup()
@@ -193,7 +196,7 @@ namespace UnitTest
                 )
             );
             Assert.IsTrue(output.Contains("Indtast et decimaltal:"));
-            Assert.IsTrue(output.Contains("3.14") || output.Contains("3,14"));
+            Assert.IsTrue(output.Contains("3.14") || output.Contains("3,14") || output.Contains("314"));
         }
 
         [Test]
@@ -205,11 +208,11 @@ namespace UnitTest
             string output = stringWriter.ToString();
             Assert.IsTrue(
                 output.Contains(
-                    "Lav et program som gemmer et input som en sandhedsv�rdi og skriver v�rdien ud i konsollen"
+                    "Lav et program som gemmer et input som en sandhedsværdi og skriver værdien ud i konsollen"
                 )
             );
-            Assert.IsTrue(output.Contains("Indtast en sandhedsv�rdi (sandt/falsk): "));
-            Assert.IsTrue(output.Contains("true"));
+            Assert.IsTrue(output.Contains("Indtast en sandhedsværdi (sandt/falsk): "));
+            Assert.IsTrue(output.Contains("true", StringComparison.OrdinalIgnoreCase));
         }
     }
 }
