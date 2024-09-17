@@ -45,7 +45,7 @@ namespace UnitTest
             Assert.IsTrue(output.Contains("Opgave 2:"));
             Assert.IsTrue(
                 output.Contains(
-                    "Lav en variabel af typen double og tildel den en værdi komma (decimal) v�rdi af 5 og en 1/4"
+                    "Lav en variabel af typen double og tildel den en værdi komma (decimal) værdi af 5 og en 1/4"
                 )
             );
             Assert.IsTrue(output.Contains("5.25") || output.Contains("5,25"));
@@ -59,7 +59,7 @@ namespace UnitTest
             Assert.IsTrue(output.Contains("Opgave 3:"));
             Assert.IsTrue(
                 output.Contains(
-                    "Lav en variabel af typen string og tildel den en værdi - den skal indeholde teksten 'Hello, World' med et udr�bstegn til sidst!"
+                    "Lav en variabel af typen string og tildel den en værdi - den skal indeholde teksten 'Hello, World' med et udråbstegn til sidst!"
                 )
             );
             Assert.IsTrue(output.Contains("Hello, World!"));
@@ -208,10 +208,10 @@ namespace UnitTest
             string output = stringWriter.ToString();
             Assert.IsTrue(
                 output.Contains(
-                    "Lav et program som gemmer et input som en sandhedsv�rdi og skriver v�rdien ud i konsollen"
+                    "Lav et program som gemmer et input som en sandhedsværdi og skriver værdien ud i konsollen"
                 )
             );
-            Assert.IsTrue(output.Contains("Indtast en sandhedsv�rdi (sandt/falsk): "));
+            Assert.IsTrue(output.Contains("Indtast en sandhedsværdi (sandt/falsk): "));
             Assert.IsTrue(output.Contains("true", StringComparison.OrdinalIgnoreCase));
         }
     }
