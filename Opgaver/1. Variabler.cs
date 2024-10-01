@@ -23,6 +23,8 @@
             Console.WriteLine("Lav en variabel af typen int og tildel den en værdi af ti!");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder! 
+            int number = 10;
+            Console.WriteLine(number);
 
         }
 

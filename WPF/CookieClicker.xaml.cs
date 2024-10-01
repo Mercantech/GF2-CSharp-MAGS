@@ -13,7 +13,7 @@ namespace WPF
 
         private void NotionButton_Click(object sender, RoutedEventArgs e)
         {
-            string url = "https://mercantec.notion.site/Cookie-Clicker-bc1b8e1add7e4eabbe9913dc4cb62553?pvs=4";
+            string url = "https://mercantec.notion.site/Cookie-Clicker-112dab5ca2378097b84cd3006f8300b6";
             try
             {
                 ProcessStartInfo psi = new ProcessStartInfo

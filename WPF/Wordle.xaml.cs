@@ -17,17 +17,17 @@ using System.Windows.Shapes;
 namespace WPF
 {
     /// <summary>
-    /// Interaction logic for Binary.xaml
+    /// Interaction logic for Wordle.xaml
     /// </summary>
-    public partial class Binary : Page
+    public partial class Wordle : Page
     {
-        public Binary()
+        public Wordle()
         {
             InitializeComponent();
         }
         private void NotionButton_Click(object sender, RoutedEventArgs e)
         {
-            string url = "https://mercantec.notion.site/Bin-r-Kodeomformer-112dab5ca237807fb757e18a0b3ba76f";
+            string url = "https://mercantec.notion.site/Wordle-112dab5ca23780fa81e6e44c3b97da4f";
             try
             {
                 ProcessStartInfo psi = new ProcessStartInfo
