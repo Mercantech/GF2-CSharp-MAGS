@@ -15,6 +15,7 @@
                 <MenuItem Header="Cookie Clicker" Click="NavigateToCookieClicker"/>
                 <MenuItem Header="Binær Kodeomformer" Click="NavigateToBinary"/>
                 <MenuItem Header="Wordle" Click="NavigateToWordle"/>
+                <MenuItem Header="TypeRacer" Click="NavigateToTypeRacer"/>
             </MenuItem>
         </Menu>
         <Button x:Name="welcomeButton" Content="Velkommen til WPF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Click="Button_Click"/>

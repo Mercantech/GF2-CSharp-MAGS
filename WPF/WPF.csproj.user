@@ -19,6 +19,9 @@
     <Compile Update="HrGran.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="TypeRacer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Wordle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="HrGran.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TypeRacer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Wordle.xaml">
