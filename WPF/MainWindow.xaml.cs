@@ -80,6 +80,16 @@ namespace WPF
             mainFrame.Navigate(new Binary());
             welcomeButton.Visibility = Visibility.Collapsed;
         }
+        private void NavigateToWordle(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new Wordle());
+            welcomeButton.Visibility = Visibility.Collapsed;
+        }
+        private void NavigateToTypeRacer(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new TypeRacer());
+            welcomeButton.Visibility = Visibility.Collapsed;
+        }
 
         private void NavigateToMain(object sender, RoutedEventArgs e)
         {

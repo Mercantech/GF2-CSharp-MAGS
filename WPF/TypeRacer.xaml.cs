@@ -17,17 +17,17 @@ using System.Windows.Shapes;
 namespace WPF
 {
     /// <summary>
-    /// Interaction logic for Binary.xaml
+    /// Interaction logic for TypeRacer.xaml
     /// </summary>
-    public partial class Binary : Page
+    public partial class TypeRacer : Page
     {
-        public Binary()
+        public TypeRacer()
         {
             InitializeComponent();
         }
         private void NotionButton_Click(object sender, RoutedEventArgs e)
         {
-            string url = "https://mercantec.notion.site/Bin-r-Kodeomformer-112dab5ca237807fb757e18a0b3ba76f";
+            string url = "https://mercantec.notion.site/TypeRacer-112dab5ca237808dafe7d15d8da2ea8a?pvs=74";
             try
             {
                 ProcessStartInfo psi = new ProcessStartInfo
