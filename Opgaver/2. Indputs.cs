@@ -7,7 +7,7 @@ namespace Opgaver
         public static void Run()
         {
             Console.WriteLine("------------------------------------------");
-            Console.WriteLine("Velkommen til opgaver omkring Variabler!");
+            Console.WriteLine("Velkommen til opgaver omkring Expressions, Operators og Indputs!");
             String1();
             Int1();
             Double1();

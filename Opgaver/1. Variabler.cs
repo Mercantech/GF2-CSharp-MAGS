@@ -1,6 +1,6 @@
 ﻿namespace Opgaver
 {
-    public class Variabler 
+    public class Variabler
     {
         public static void Run()
         {

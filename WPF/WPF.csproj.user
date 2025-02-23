@@ -10,6 +10,9 @@
     <Compile Update="Binary.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ConnectFour.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CookieClicker.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="HrGran.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TicTacToe.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="TypeRacer.xaml.cs">
@@ -30,6 +36,9 @@
     <Page Update="Binary.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ConnectFour.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CookieClicker.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -40,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="HrGran.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TicTacToe.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="TypeRacer.xaml">
