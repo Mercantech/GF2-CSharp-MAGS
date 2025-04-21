@@ -7,12 +7,12 @@ namespace Opgaver
         public static void Run()
         {
             Console.WriteLine("------------------------------------------");
-            Console.WriteLine("Velkommen til opgaver omkring Control Flow med if, else if og else, Switch og Ternary operator!");
+            Console.WriteLine(@"Velkommen til opgaver omkring Control Flow med if, else if og else, 
+            Switch og Ternary operator!");
             If1();
             If2();
-            BankeBøf();
             MiniProjektQuiz();
-            MiniProjektLommeregner();
+            MiniProjektKarakterFeedback();
         }
 
         public static void If1()
@@ -37,14 +37,6 @@ namespace Opgaver
             // Lav opgaven herunder!
         }
 
-        public static void BankeBøf()
-        {
-            Console.WriteLine("Lav et program som udskriver 'Banke' hvis tallet er deleligt med 3");
-            Console.WriteLine("'Bøf' hvis tallet er deleligt med 5");
-            Console.WriteLine("og 'BankeBøf' hvis tallet er deleligt med 3 og 5");
-            // Lav opgaven herunder!
-        }
-
         public static void MiniProjektQuiz()
         {
             Console.WriteLine("\nMini-projekt: Simpelt quiz-spil (skabelon)");
@@ -56,13 +48,17 @@ namespace Opgaver
             // Lav opgaven herunder!
         }
 
-        public static void MiniProjektLommeregner()
+        public static void MiniProjektKarakterFeedback()
         {
-            Console.WriteLine("\nMini-projekt: Simpel lommeregner (skabelon)");
+            Console.WriteLine("\nMini-projekt: Karakter-feedback (skabelon)");
             Console.WriteLine("Opgave:");
-            Console.WriteLine("Lav et program, hvor brugeren indtaster to tal og vælger en regneart (+, -, * eller /).");
-            Console.WriteLine("Programmet skal udregne og udskrive resultatet.");
-            Console.WriteLine("Tip: Brug if/else eller switch til at vælge regnearten.");
+            Console.WriteLine("Lav et program, hvor brugeren indtaster en karakter (fx 12, 10, 7, 4, 02, 00 eller -3).");
+            Console.WriteLine(@"Programmet skal give en passende feedback baseret på karakteren, 
+            fx 'Super flot!', 'Godt klaret', 'Du kan gøre det bedre' osv.");
+            Console.WriteLine("Brug if/else eller switch til at vælge feedbacken.");
+
+            Console.WriteLine(@"Ekstra opgave: Lav så man indtaster flere karaktere 
+            for en bruger og man regner gennemsnittet ud.");
             // Lav opgaven herunder!
         }
     }

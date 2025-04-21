@@ -58,13 +58,13 @@ namespace Opgaver
         }
         public static void Hjælp()
         {
-            Console.WriteLine();
+            Console.WriteLine("------------------------------------------");
             Console.WriteLine("Vælg et opgavesæt:");
             Console.WriteLine("1: Variabler");
             Console.WriteLine("2: Indputs");
-            Console.WriteLine("3: Control Flow");
+            Console.WriteLine("3: Control Flow, If, Else, Switch og Ternary operator");
             Console.WriteLine("4: Loops");
-            Console.WriteLine("5: Arrays");
+            Console.WriteLine("5: Arrays, List og Dictionary");
             Console.WriteLine("6: Methods");
             Console.WriteLine("7: Classes");
             Console.WriteLine("8: Sten, Saks, Papir projektet");
