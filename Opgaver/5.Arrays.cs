@@ -16,6 +16,8 @@ namespace Opgaver
             Array1();
             Array2();
             List1();
+            MiniProjektKlasseliste();
+            MiniProjektIndkøbsliste();
         }
         public static void List1()
         {
@@ -38,6 +40,22 @@ namespace Opgaver
             string[] navne = new string[5];
         }
 
+        public static void MiniProjektKlasseliste()
+        {
+            Console.WriteLine("\nMini-projekt: Klasseliste (skabelon)");
+            Console.WriteLine("Opgave:");
+            Console.WriteLine("Lav et program, hvor brugeren indtaster navnene på alle elever i en klasse (fx 5 navne).");
+            Console.WriteLine("Gem navnene i en liste og udskriv hele klasselisten i konsollen.");
+            // Lav opgaven herunder!
+        }
 
+        public static void MiniProjektIndkøbsliste()
+        {
+            Console.WriteLine("\nMini-projekt: Indkøbsliste (skabelon)");
+            Console.WriteLine("Opgave:");
+            Console.WriteLine("Lav et program, hvor brugeren indtaster navnet på tre ting, de skal købe i supermarkedet.");
+            Console.WriteLine("Gem tingene i en liste og udskriv en indkøbsliste til brugeren.");
+            // Lav opgaven herunder!
+        }
     }
 }

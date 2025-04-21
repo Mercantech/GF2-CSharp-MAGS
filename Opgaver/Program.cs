@@ -1,4 +1,5 @@
-﻿
+﻿using System.Security.Cryptography.X509Certificates;
+
 namespace Opgaver
 {
     internal class Program
@@ -6,20 +7,70 @@ namespace Opgaver
         static void Main(string[] args)
         {
             Console.WriteLine("Hej, GF2!");
+            Console.WriteLine("Velkommen til opgaverne!");
+            Hjælp();
+            bool run = true;
+            while (run)
+            {
 
-            //Kør Variabler Opgaverne!
-            Variabler.Run();
-            Indputs.Run();
-            ControlFlow.Run();
-            Arrays.Run();
-            Methods.Run();
-            Classes.Run();
-            Loops.Run();
+                string valg = Console.ReadLine();
 
-            // Kør Sten, Saks, Papir projektet!
-            RockPaperScissors.Run();
+                switch (valg)
+                {
+                    case "1":
+                        Variabler.Run();
+                        break;
+                    case "2":
+                        Indputs.Run();
+                        break;
+                    case "3":
+                        ControlFlow.Run();
+                        break;
+                    case "4":
+                        Loops.Run();
+                        break;
+                    case "5":
+                        Arrays.Run();
+                        break;
+                    case "6":
+                        Methods.Run();
+                        break;
+                    case "7":
+                        Classes.Run();
+                        break;
+                    case "8":
+                        RockPaperScissors.Run();
+                        break;
+                    case "!":
+                        run = false;
+                        Console.WriteLine("Programmet afsluttes. Tak for denne gang!");
+                        break;
+                    case "?":
+                        Hjælp();
+                        break;
+                    default:
+                        Console.WriteLine("Ugyldigt valg!");
+                        Console.Write("Indtast dit valg: ");
+
+                        break;
+                }
+            }
         }
-
-
+        public static void Hjælp()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Vælg et opgavesæt:");
+            Console.WriteLine("1: Variabler");
+            Console.WriteLine("2: Indputs");
+            Console.WriteLine("3: Control Flow");
+            Console.WriteLine("4: Loops");
+            Console.WriteLine("5: Arrays");
+            Console.WriteLine("6: Methods");
+            Console.WriteLine("7: Classes");
+            Console.WriteLine("8: Sten, Saks, Papir projektet");
+            Console.WriteLine("!: Afslut");
+            Console.WriteLine("?: For overblik over opgaverne");
+            Console.Write("Indtast dit valg: ");
+        }
     }
 }
