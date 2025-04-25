@@ -12,7 +12,6 @@ namespace Opgaver
             bool run = true;
             while (run)
             {
-
                 string valg = Console.ReadLine();
 
                 switch (valg)
@@ -21,7 +20,7 @@ namespace Opgaver
                         Variabler.Run();
                         break;
                     case "2":
-                        Indputs.Run();
+                        Inputs.Run();
                         break;
                     case "3":
                         ControlFlow.Run();
@@ -56,6 +55,7 @@ namespace Opgaver
                 }
             }
         }
+
         public static void Hjælp()
         {
             Console.WriteLine("------------------------------------------");
