@@ -40,6 +40,9 @@ namespace Opgaver
                     case "8":
                         RockPaperScissors.Run();
                         break;
+                    case "9":
+                        BinaryConverter.Run();
+                        break;
                     case "!":
                         run = false;
                         Console.WriteLine("Programmet afsluttes. Tak for denne gang!");
@@ -68,6 +71,7 @@ namespace Opgaver
             Console.WriteLine("6: Methods");
             Console.WriteLine("7: Classes");
             Console.WriteLine("8: Sten, Saks, Papir projektet");
+            Console.WriteLine("9: Binær/Decimal konvertering");
             Console.WriteLine("!: Afslut");
             Console.WriteLine("?: For overblik over opgaverne");
             Console.Write("Indtast dit valg: ");
